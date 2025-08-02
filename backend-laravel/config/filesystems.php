@@ -60,6 +60,24 @@ return [
             'report' => false,
         ],
 
+        'avatars' => [
+            'driver' => 'local',
+            'root' => storage_path('app/avatars'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
+            'throw' => false,
+            'report' => false,
+        ],
+
+        'posters' => [
+            'driver' => 'local',
+            'root' => storage_path('app/posters'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
+            'throw' => false,
+            'report' => false,
+        ],
+
     ],
 
     /*
